@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- i have already html, css file create and internal javascript add and 
+
+	 after complete all coding complete explained javascript code  -->
+	 <link rel="stylesheet" type="text/css" href="StyleSplash.css">
+	<title>Splashscreen</title>
+</head>
+<body>
+<div class="skill_bar">
+	<div class="outer_circle">
+		<div class="inner_circle">
+			<div id="value">50%</div>
+		</div>
+	</div>
+	<!-- NOw create svg coding -->
+	<svg width="160px" height="160px">
+			<defs>
+    <linearGradient id="linear" >
+      <stop offset="0%"   stop-color="#05a"/>
+      <stop offset="100%" stop-color="#0a5"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="70"  stroke-linecap="round"  />
+</svg>
+</div>
+
+<script type="text/javascript">
+	var number = document.getElementById('value');
+	var count_value = 0;
+	function running_animation(){
+		 if (count_value == 100) {
+		 	clearInterval();
+			window.location.href="User_HOMEPAGE.php";
+		 }else{
+		 	count_value = count_value + 1;
+		 	number.innerHTML = count_value + "%";
+		 }
+	}
+	// call function
+	running_animation();
+	setInterval(running_animation, 40)
+
+	// 0 to 50% complete in 40 milisecond
+	// running_animation is function name and 40 is milisecond
+	// Any query please comment
+	// and thanks for watching
+</script>
+</body>
+</html>
