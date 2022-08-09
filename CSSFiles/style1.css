@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(forgot\ password.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.Container1{
+    width:320px;
+    height:420px;
+    background: blueviolet;
+    color : black;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.Container1 input[type="Submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    background:#fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Container1 input[type="Submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.strong{
+	color: white;
+	font-size: 30px;
+	font-family: verdana;
+}
+.label{
+	color:white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+	border-right:3px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 35px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+	opacity: 0.6;
+}
+
+.Container1 a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.Container1 a:hover
+{
+    color:#ffc107;
+}
+a:link, a:visited {
+    background-color: blueviolet;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+a:hover, a:active {
+    background-color: yellow;
+  }
+#h4{
+    color: #000;
+}
+option{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
