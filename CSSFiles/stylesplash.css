@@ -1,0 +1,64 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: blueviolet;
+	background: url(splash.jpg);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.skill_bar{
+	height: 160px;
+	width: 160px;
+	position: relative;
+}
+.outer_circle{
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+	-6px -6px 10px -1px rgba(255, 255, 255, .7);
+	padding: 20px;
+}
+.inner_circle{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	box-shadow:inset 4px 4px  6px -1px rgba(0, 0, 0, .2),
+	inset -4px -4px  6px -1px rgba(255, 255, 255, .7),
+	-0.5px -0.5px 0px rgba(255, 255, 255, 1),
+	0.5px 0.5px 0px rgba(0, 0, 0, .2),
+	0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#value{
+	font-weight: 600;
+	color: pink;
+    
+}
+svg{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+circle{
+	fill: none;
+	stroke-width: 20px;
+	stroke: url('#linear');
+	stroke-dasharray: 450;
+	stroke-dashoffset: 450;
+	animation: animate 2s linear forwards;
+}
+@keyframes animate {
+	100%{
+		stroke-dashoffset: 230;
+	}
+}
